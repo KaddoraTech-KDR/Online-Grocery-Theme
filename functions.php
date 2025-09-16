@@ -193,26 +193,3 @@ function online_grocery_enqueue_editor_scripts()
 }
 add_action('enqueue_block_editor_assets', 'online_grocery_enqueue_editor_scripts');
 
-/**
- * Register header and footer template parts
- */
-function online_grocery_register_template_parts() {
-	register_block_template_part(
-		array(
-			'id' => 'online-grocery-header',
-			'area' => 'header',
-			'title' => 'Online Grocery Header',
-			'description' => 'Header template part for Online Grocery Theme',
-		)
-	);
-	
-	register_block_template_part(
-		array(
-			'id' => 'online-grocery-footer',
-			'area' => 'footer',
-			'title' => 'Online Grocery Footer',
-			'description' => 'Footer template part for Online Grocery Theme',
-		)
-	);
-}
-add_action('init', 'online_grocery_register_template_parts');
