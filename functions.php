@@ -8,11 +8,9 @@
  */
 
 add_action('after_setup_theme', function () {
-	// Tell WooCommerce our theme supports block templates
 	add_theme_support('woocommerce');
 	add_theme_support('woocommerce-block-templates');
 	
-	// Register header and footer support
 	add_theme_support('block-templates');
 	add_theme_support('block-template-parts');
 });
@@ -122,9 +120,7 @@ if (!function_exists('online_grocery_block_styles')):
 endif;
 add_action('init', 'online_grocery_block_styles');
 
-/**
- * Enqueue block stylesheets.
- */
+
 if (!function_exists('online_grocery_block_stylesheets')):
 	function online_grocery_block_stylesheets()
 	{
@@ -141,9 +137,7 @@ if (!function_exists('online_grocery_block_stylesheets')):
 endif;
 add_action('init', 'online_grocery_block_stylesheets');
 
-/**
- * Register pattern categories.
- */
+
 if (!function_exists('online_grocery_pattern_categories')):
 	function online_grocery_pattern_categories()
 	{
@@ -158,9 +152,7 @@ if (!function_exists('online_grocery_pattern_categories')):
 endif;
 add_action('init', 'online_grocery_pattern_categories');
 
-/**
- * Enqueue frontend custom CSS.
- */
+
 function online_grocery_enqueue_styles()
 {
 	wp_enqueue_style(
@@ -178,9 +170,7 @@ function online_grocery_enqueue_styles()
 }
 add_action('wp_enqueue_scripts', 'online_grocery_enqueue_styles');
 
-/**
- * Enqueue editor JS.
- */
+
 function online_grocery_enqueue_editor_scripts()
 {
 	wp_enqueue_script(
