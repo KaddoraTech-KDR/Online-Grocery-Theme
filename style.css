@@ -11,8 +11,10 @@ Text Domain: online-grocery-theme
 Tags: woocommerce, block-theme, grocery, one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
 
-/* Basic reset & layout */
+/* Basic reset & layout 
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
 .container{max-width:1100px;margin:0 auto;padding:24px}
 .site-header{padding:16px 0;border-bottom:1px solid #eee}
 .site-footer{padding:16px 0;border-top:1px solid #eee;margin-top:40px}
+
+*/

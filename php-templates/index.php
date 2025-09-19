@@ -1,6 +1,4 @@
 <?php
-// Fallback index — includes php-templates/header.php and footer.php
-
 
 if ( file_exists( get_template_directory() . '/php-templates/header.php' ) ) {
 include get_template_directory() . '/php-templates/header.php';

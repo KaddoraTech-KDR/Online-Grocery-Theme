@@ -1,4 +1,4 @@
-</div> <!-- .content-area -->
+</div> 
 <footer class="site-footer container">
 <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
 </footer>
