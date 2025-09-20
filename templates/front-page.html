@@ -1,5 +1,53 @@
-<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:template-part {"slug":"header","theme":"Online-Grocery-Theme"} /-->
 
 <!-- wp:pattern {"slug": "Online-Grocery-Theme/banner-retail-01"} /-->
 
-<!-- wp:template-part {"slug":"footer"} /-->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-group"><!-- wp:woocommerce/product-collection {"queryId":4,"query":{"perPage":5,"pages":1,"offset":0,"postType":"product","order":"desc","orderBy":"popularity","search":"","exclude":[],"inherit":false,"taxQuery":{},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":5,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"collection":"woocommerce/product-collection/best-sellers","hideControls":["inherit","order","filterable"],"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."}} -->
+<div class="wp-block-woocommerce-product-collection"><!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"bottom":"1rem"}},"color":{"text":"#198754"},"elements":{"link":{"color":{"text":"#198754"}}}},"fontFamily":"system-sans-serif"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color has-system-sans-serif-font-family" style="color:#198754;margin-bottom:1rem"><strong>Best selling products</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:woocommerce/product-template -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"radius":"25px"},"shadow":"var:preset|shadow|natural"},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-group" style="border-radius:25px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20);box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:woocommerce/product-image {"showSaleBadge":false,"imageSizing":"thumbnail","isDescendentOfQueryLoop":true,"width":"10rem","height":"10rem","scale":"contain"} -->
+<!-- wp:woocommerce/product-sale-badge {"align":"right"} /-->
+<!-- /wp:woocommerce/product-image -->
+
+<!-- wp:post-title {"textAlign":"center","isLink":true,"style":{"spacing":{"margin":{"bottom":"0.75rem","top":"0"}},"typography":{"lineHeight":"1.4"}},"fontSize":"medium","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
+
+<!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true,"textAlign":"center","fontSize":"small"} /-->
+
+<!-- wp:woocommerce/product-button {"textAlign":"center","isDescendentOfQueryLoop":true,"fontSize":"small"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:woocommerce/product-template --></div>
+<!-- /wp:woocommerce/product-collection --></div>
+<!-- /wp:group -->
+
+<!-- wp:pattern {"slug": "Online-Grocery-Theme/banner-retail-02"} /-->
+
+<!-- wp:group {"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-group"><!-- wp:woocommerce/product-collection {"queryId":5,"query":{"perPage":5,"pages":1,"offset":0,"postType":"product","order":"desc","orderBy":"rating","search":"","exclude":[],"inherit":false,"taxQuery":{},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":5,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"collection":"woocommerce/product-collection/top-rated","hideControls":["inherit","order","filterable"],"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."}} -->
+<div class="wp-block-woocommerce-product-collection"><!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|10","top":"var:preset|spacing|10"}},"color":{"text":"#198754"},"elements":{"link":{"color":{"text":"#198754"}}}},"fontFamily":"system-sans-serif"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color has-system-sans-serif-font-family" style="color:#198754;margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10)"><strong>Top rated products</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:woocommerce/product-template -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"0.3rem","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"radius":"25px"},"shadow":"var:preset|shadow|natural"},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="border-radius:25px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20);box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:woocommerce/product-image {"showSaleBadge":false,"imageSizing":"thumbnail","isDescendentOfQueryLoop":true,"width":"10rem","height":"10rem","scale":"contain"} -->
+<!-- wp:woocommerce/product-sale-badge {"align":"right"} /-->
+<!-- /wp:woocommerce/product-image -->
+
+<!-- wp:post-title {"textAlign":"center","isLink":true,"style":{"spacing":{"margin":{"bottom":"0.75rem","top":"0"}},"typography":{"lineHeight":"1.4"}},"fontSize":"medium","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
+
+<!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true,"textAlign":"center","fontSize":"small"} /-->
+
+<!-- wp:woocommerce/product-button {"textAlign":"center","isDescendentOfQueryLoop":true,"fontSize":"small"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:woocommerce/product-template --></div>
+<!-- /wp:woocommerce/product-collection --></div>
+<!-- /wp:group -->
+
+<!-- wp:pattern {"slug": "Online-Grocery-Theme/testimonials-retail-01"} /-->
+
+<!-- wp:template-part {"slug":"footer","theme":"Online-Grocery-Theme"} /-->
