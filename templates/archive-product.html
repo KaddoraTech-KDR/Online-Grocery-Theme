@@ -1,0 +1,50 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:cover {"dimRatio":30,"minHeight":220,"contentPosition":"center center"} -->
+<div class="wp-block-cover" style="min-height:220px">
+  <span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background"></span>
+  <div class="wp-block-cover__inner-container">
+    <!-- wp:query-title {"type":"archive"} /-->
+    <!-- wp:term-description /-->
+  </div>
+</div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"align":"wide"} -->
+<div class="wp-block-group alignwide">
+
+  <!-- wp:columns -->
+  <div class="wp-block-columns">
+
+    <!-- LEFT: FILTERS -->
+    <!-- wp:column {"width":"25%"} -->
+    <div class="wp-block-column" style="flex-basis:25%">
+      <!-- wp:heading {"level":4} -->
+      <h4>Filters</h4>
+      <!-- /wp:heading -->
+
+      <!-- wp:woocommerce/price-filter /-->
+      <!-- wp:woocommerce/attribute-filter {"attributeName":"pa_organic"} /-->
+      <!-- wp:woocommerce/attribute-filter {"attributeName":"pa_vegan"} /-->
+      <!-- wp:woocommerce/active-filters /-->
+    </div>
+    <!-- /wp:column -->
+
+    <!-- RIGHT: PRODUCTS -->
+    <!-- wp:column {"width":"75%"} -->
+    <div class="wp-block-column" style="flex-basis:75%">
+
+      <!-- wp:woocommerce/catalog-sorting /-->
+      <!-- wp:woocommerce/product-collection /-->
+      <!-- wp:woocommerce/pagination /-->
+
+    </div>
+    <!-- /wp:column -->
+
+  </div>
+  <!-- /wp:columns -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
