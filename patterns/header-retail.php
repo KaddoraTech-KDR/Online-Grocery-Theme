@@ -22,8 +22,13 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"style":{"color":{"background":"#198754"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-background wp-element-button" style="background-color:#198754">Login</a></div>
-<div class="wp-block-button"><a class="wp-block-button__link has-background wp-element-button" style="background-color:#198754">Register</a></div>
+<div class="wp-block-button">
+<a class="wp-block-button__link  has-background wp-element-button" style="background-color:#198754" href="/login">Login</a>
+</div>
+<div class="wp-block-button">
+        <a class="wp-block-button__link  has-background wp-element-button" style="background-color:#198754" href="/register">Register</a>
+</div>
+
 
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
