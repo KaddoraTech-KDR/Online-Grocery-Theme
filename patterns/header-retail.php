@@ -30,8 +30,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"0.4rem","top":"0.4rem"},"blockGap":"1rem"},"shadow":"var:preset|shadow|natural","color":{"background":"#c1d7cb"},"typography":{"fontSize":"1.3rem"}},"borderColor":"base","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group has-border-color has-base-border-color has-background" style="background-color:#c1d7cb;padding-top:0.4rem;padding-bottom:0.4rem;font-size:1.3rem;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:navigation {"style":{"spacing":{"blockGap":"2rem"}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"0.4rem","top":"0.4rem"},"blockGap":"1rem"},"shadow":"var:preset|shadow|natural","color":{"background":"#bbf8e2"},"typography":{"fontSize":"1.3rem"}},"borderColor":"base","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group has-border-color has-base-border-color has-background" style="background-color:#bbf8e2;padding-top:0.4rem;padding-bottom:0.4rem;font-size:1.3rem;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:navigation {"style":{"spacing":{"blockGap":"2rem"}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <!-- wp:navigation-link {"label":"Home","url":"/"} /-->
 
 <!-- wp:navigation-link {"label":"About","url":"/about"} /-->

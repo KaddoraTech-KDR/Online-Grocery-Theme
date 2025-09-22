@@ -5,8 +5,8 @@
  * Categories: front page
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|10"}}},"layout":{"type":"constrained","contentSize":"100%"}} -->
-<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--10)"><!-- wp:heading {"textAlign":"center","style":{"color":{"text":"#0d7746"},"elements":{"link":{"color":{"text":"#0d7746"}}}}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|20","top":"var:preset|spacing|20"}}},"layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:heading {"textAlign":"center","style":{"color":{"text":"#0d7746"},"elements":{"link":{"color":{"text":"#0d7746"}}}}} -->
 <h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#0d7746"><strong>What Our Customers Say</strong></h2>
 <!-- /wp:heading -->
 
