@@ -26,9 +26,8 @@
 <a class="wp-block-button__link  has-background wp-element-button" style="background-color:#198754" href="/login">Login</a>
 </div>
 <div class="wp-block-button">
-        <a class="wp-block-button__link  has-background wp-element-button" style="background-color:#198754" href="/register">Register</a>
+<a class="wp-block-button__link  has-background wp-element-button" style="background-color:#198754" href="/register">Register</a>
 </div>
-
 
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
@@ -40,7 +39,7 @@
 <!-- wp:navigation-link {"label":"Home","url":"/"} /-->
 
 <!-- wp:navigation-link {"label":"About","url":"/about"} /-->
-
+ 
 <!-- wp:navigation-link {"label":"Contact","url":"/Contact"} /-->
 
 <!-- wp:navigation-link {"label":"Products","url":"/shop"} /-->
@@ -52,6 +51,7 @@
 <!-- wp:navigation-link {"label":"My Account","url":"/my-account"} /-->
 
 <!-- wp:navigation-link {"label":"Blogs","url":"/blog"} /-->
+ 
 <!-- /wp:navigation --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

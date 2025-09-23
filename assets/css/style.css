@@ -1,0 +1,60 @@
+/* Login/Register Pages */
+.woocommerce-login-page,
+.woocommerce-register-page {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.woocommerce-form-login,
+.woocommerce-form-register {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.woocommerce-form-login label,
+.woocommerce-form-register label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.woocommerce-form-login input[type="text"],
+.woocommerce-form-login input[type="email"],
+.woocommerce-form-login input[type="password"],
+.woocommerce-form-register input[type="text"],
+.woocommerce-form-register input[type="email"],
+.woocommerce-form-register input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.woocommerce-form-login .woocommerce-button,
+.woocommerce-form-register .woocommerce-button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #007cba;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.woocommerce-form-login .woocommerce-button:hover,
+.woocommerce-form-register .woocommerce-button:hover {
+    background: #005a87;
+}
+
+.woocommerce-privacy-policy-text {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #666;
+}

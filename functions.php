@@ -183,3 +183,48 @@ function online_grocery_enqueue_editor_scripts()
 }
 add_action('enqueue_block_editor_assets', 'online_grocery_enqueue_editor_scripts');
 
+
+//-------------------------Login And Sign Up------------------------------->
+
+// Register custom templates
+function mytheme_register_page_templates() {
+    add_filter('theme_page_templates', function($templates) {
+        $templates['page-login.php'] = __('Login Page');
+        $templates['page-register.php'] = __('Register Page');
+        return $templates;
+    });
+}
+add_action('init', 'mytheme_register_page_templates');
+
+// Redirect WooCommerce my-account to custom login
+function mytheme_redirect_my_account() {
+    if (is_page('my-account') && !is_user_logged_in()) {
+        wp_redirect(home_url('/login'));
+        exit;
+    }
+}
+add_action('template_redirect', 'mytheme_redirect_my_account');
+
+// Add custom login/register links
+function mytheme_add_auth_links($items, $args) {
+    if ($args->theme_location == 'primary') {
+        if (is_user_logged_in()) {
+            $items .= '<li><a href="' . wp_logout_url(home_url()) . '">Logout</a></li>';
+        } else {
+            $items .= '<li><a href="' . home_url('/login') . '">Login</a></li>';
+            $items .= '<li><a href="' . home_url('/register') . '">Register</a></li>';
+        }
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'mytheme_add_auth_links', 10, 2);
+
+function mytheme_register_patterns() {
+    register_block_pattern_category('mytheme-forms', array(
+        'label' => __('MyTheme Forms', 'mytheme')
+    ));
+}
+add_action('init', 'mytheme_register_patterns');
+
+//----------------------------------Login and sign Up-------------------------->
+
