@@ -161,12 +161,12 @@ function online_grocery_enqueue_styles()
 		array(),
 		wp_get_theme()->get('Version')
 	);
-	// wp_enqueue_style(
-	// 	'online-grocery-button-css',
-	// 	get_stylesheet_directory_uri() . '/assets/css/button-style.css',
-	// 	array(),
-	// 	wp_get_theme()->get('Version')
-	// );
+	wp_enqueue_style(
+		'online-grocery-button-css',
+		get_stylesheet_directory_uri() . '/assets/css/button-style.css',
+		array(),
+		wp_get_theme()->get('Version')
+	);
 }
 add_action('wp_enqueue_scripts', 'online_grocery_enqueue_styles');
 
