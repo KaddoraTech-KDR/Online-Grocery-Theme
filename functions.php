@@ -184,14 +184,11 @@ function online_grocery_enqueue_editor_scripts()
 add_action('enqueue_block_editor_assets', 'online_grocery_enqueue_editor_scripts');
 
 
-//-------------------------Login And Sign Up------------------------------->
-
-// Enqueue custom scripts and styles
+//
 function custom_login_register_scripts() {
     wp_enqueue_script('custom-auth-js', get_template_directory_uri() . '/assets/js/auth.js', array('jquery'), '1.0', true);
     wp_enqueue_style('custom-auth-css', get_template_directory_uri() . '/assets/css/auth.css', array(), '1.0');
     
-    // Localize script for AJAX URLs
     wp_localize_script('custom-auth-js', 'ajax_object', array(
         'ajax_url' => admin_url('admin-ajax.php'),
         'home_url' => home_url()
@@ -199,9 +196,7 @@ function custom_login_register_scripts() {
 }
 add_action('wp_enqueue_scripts', 'custom_login_register_scripts');
 
-// Handle user registration
 function handle_user_registration() {
-    // Verify nonce
     if (!wp_verify_nonce($_POST['register_nonce'], 'register_action')) {
         wp_die('Security check failed');
     }
@@ -211,7 +206,6 @@ function handle_user_registration() {
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
-    // Validation
     if (empty($username) || empty($email) || empty($password)) {
         wp_send_json_error('All fields are required.');
     }
@@ -232,14 +226,12 @@ function handle_user_registration() {
         wp_send_json_error('Email already exists.');
     }
 
-    // Create new user
     $user_id = wp_create_user($username, $password, $email);
 
     if (is_wp_error($user_id)) {
         wp_send_json_error($user_id->get_error_message());
     }
 
-    // Log the user in automatically after registration
     wp_set_current_user($user_id);
     wp_set_auth_cookie($user_id);
 
@@ -247,9 +239,7 @@ function handle_user_registration() {
 }
 add_action('wp_ajax_nopriv_register_user', 'handle_user_registration');
 
-// Handle user login
 function handle_user_login() {
-    // Verify nonce
     if (!wp_verify_nonce($_POST['login_nonce'], 'login_action')) {
         wp_die('Security check failed');
     }
@@ -258,12 +248,10 @@ function handle_user_login() {
     $password = $_POST['password'];
     $remember = isset($_POST['remember']) ? true : false;
 
-    // Validation
     if (empty($username) || empty($password)) {
         wp_send_json_error('Username and password are required.');
     }
 
-    // Attempt login
     $creds = array(
         'user_login'    => $username,
         'user_password' => $password,
@@ -283,7 +271,6 @@ function handle_user_login() {
 }
 add_action('wp_ajax_nopriv_login_user', 'handle_user_login');
 
-// Check if user is logged in and redirect to dashboard
 function redirect_logged_in_users() {
     if (is_user_logged_in() && (is_page('login') || is_page('register'))) {
         wp_redirect(home_url('/dashboard'));
@@ -292,7 +279,6 @@ function redirect_logged_in_users() {
 }
 add_action('template_redirect', 'redirect_logged_in_users');
 
-// Protect dashboard page
 function protect_dashboard_page() {
     if (is_page('dashboard') && !is_user_logged_in()) {
         wp_redirect(home_url('/login'));
@@ -301,7 +287,6 @@ function protect_dashboard_page() {
 }
 add_action('template_redirect', 'protect_dashboard_page');
 
-// Create necessary pages on theme activation
 function create_auth_pages() {
     $pages = array(
         'login' => array(
@@ -332,7 +317,6 @@ function create_auth_pages() {
 }
 add_action('after_switch_theme', 'create_auth_pages');
 
-// Shortcode for login form
 function customer_login_shortcode() {
     if (is_user_logged_in()) {
         return '<p>You are already logged in. <a href="' . home_url('/dashboard') . '">Go to Dashboard</a> | <a href="' . wp_logout_url(home_url()) . '">Logout</a></p>';
@@ -340,11 +324,11 @@ function customer_login_shortcode() {
 
     ob_start();
     ?>
-    <div id="customer-login-form">
+    <div id="customer-login-form" style="background-color:#f1fdf6;">
         <form id="login-form" method="post">
             <?php wp_nonce_field('login_action', 'login_nonce'); ?>
             <div class="form-group">
-                <label for="login-username">Username or Email</label>
+                <label for="login-username">Email</label>
                 <input type="text" id="login-username" name="username" required>
             </div>
             <div class="form-group">
@@ -357,7 +341,7 @@ function customer_login_shortcode() {
                 </label>
             </div>
             <div class="form-group">
-                <button type="submit">Login</button>
+                <button type="submit" style="background-color:#198754;">Login</button>
             </div>
         </form>
         <div id="login-message"></div>
@@ -375,11 +359,11 @@ function customer_register_shortcode() {
 
     ob_start();
     ?>
-    <div id="customer-register-form">
+    <div id="customer-register-form" style="background-color:#f1fdf6;">
         <form id="register-form" method="post">
             <?php wp_nonce_field('register_action', 'register_nonce'); ?>
             <div class="form-group">
-                <label for="register-username">Username</label>
+                <label for="register-username">Name</label>
                 <input type="text" id="register-username" name="username" required>
             </div>
             <div class="form-group">
@@ -395,7 +379,7 @@ function customer_register_shortcode() {
                 <input type="password" id="register-confirm-password" name="confirm_password" required>
             </div>
             <div class="form-group">
-                <button type="submit">Register</button>
+                <button type="submit" style="background-color:#198754;">Register</button>
             </div>
         </form>
         <div id="register-message"></div>
@@ -407,5 +391,4 @@ function customer_register_shortcode() {
 add_shortcode('customer_register', 'customer_register_shortcode');
 
 
-//----------------------------------Login and sign Up-------------------------->
 
