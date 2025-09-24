@@ -1,0 +1,18 @@
+/* Remove underline from all links */
+a {
+  text-decoration: none;
+}
+
+/* Ensure no underline even on hover */
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+/* Remove focus outline/box */
+a:focus,
+a:active {
+  outline: none;
+  box-shadow: none;
+}

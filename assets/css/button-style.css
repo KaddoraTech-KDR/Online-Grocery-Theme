@@ -1,3 +1,42 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #ffffff; /* solid white */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+header .cart {
+  position: relative;
+  margin-right: 20px;
+}
+
+header .cart .count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #e53935;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+header .login-btn {
+  background: #4CAF50;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+header .login-btn:hover {
+  background: #388e3c;
+}
+
+
 /* ==============================
    Global WooCommerce Block Buttons
    ============================== */
@@ -103,4 +142,44 @@
 
 .wc-block-grid__product .wp-block-button__link:hover {
   background-color: #00796B;
+}
+
+/* Remove underline from all links */
+a {
+  text-decoration: none;
+}
+
+/* Ensure no underline even on hover */
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+/* Remove focus outline/box */
+a:focus,
+a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+header a {
+  position: relative;
+  text-decoration: none;
+  color: #222;
+}
+
+header a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 4px;
+  background: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+header a:hover::after {
+  width: 100%;
 }
