@@ -21,16 +21,43 @@
 <div class="wp-block-group"><!-- wp:woocommerce/mini-cart {"miniCartIcon":"bag-alt","hasHiddenPrice":false,"productCountColor":{"color":"#20965f"},"productCountVisibility":"always","style":{"typography":{"fontWeight":"700","fontStyle":"normal"}}} /-->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"style":{"color":{"background":"#198754"}}} -->
-<div class="wp-block-button">
-<a class="wp-block-button__link  has-background wp-element-button" style="background-color:#198754" href="/login">Login</a>
+<div class="wp-block-buttons">
+    <?php if ( is_user_logged_in() ) :
+        $current_user = wp_get_current_user(); ?>
+        
+        <li class="nav-item" style="list-style-type:none;">
+            <span class="wp-block-button__link has-background wp-element-button" style="background-color:gray;">
+            <?php echo esc_html( $current_user->display_name ); ?>
+            </span>
+        </li>
+        <li class="nav-item" style="list-style-type:none;">
+            <a class="wp-block-button__link has-background wp-element-button"
+               style="background-color:#198754"
+               href="<?php echo esc_url( wp_logout_url( site_url('/login') ) ); ?>">
+                Logout
+            </a>
+        </li>
+        
+    <?php else : ?>
+        
+        <li style="list-style-type:none;" class="nav-item <?php if ( is_page('login') || wp_get_post_parent_id(0) == 119 ) echo 'current-menu-item'; ?>">
+            <a class="wp-block-button__link has-background wp-element-button"
+               style="background-color:#198754"
+               href="<?php echo esc_url( home_url('/login') ); ?>">
+                Login
+            </a>
+        </li>
+        
+        <li style="list-style-type:none;" class="nav-item <?php if ( is_page('register') || wp_get_post_parent_id(0) == 121 ) echo 'current-menu-item'; ?>">
+            <a class="wp-block-button__link has-background wp-element-button"
+               style="background-color:#198754"
+               href="<?php echo esc_url( home_url('/register') ); ?>">
+                Register
+            </a>
+        </li>
+        
+    <?php endif; ?>
 </div>
-<a href="<?php echo home_url('/login'); ?>" class="auth-link login-link">Login</a>
-
-<div class="wp-block-button">
-<a class="wp-block-button__link  has-background wp-element-button" style="background-color:#198754" href="/register">Register</a>
-</div>
-
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -53,8 +80,6 @@
 <!-- wp:navigation-link {"label":"My Account","url":"/my-account"} /-->
 
 <!-- wp:navigation-link {"label":"Blogs","url":"/blog"} /-->
-
-<!-- wp:navigation-link {"label":"Login","url":"/login"} /-->
  
 <!-- /wp:navigation --></div>
 <!-- /wp:group --></div>
