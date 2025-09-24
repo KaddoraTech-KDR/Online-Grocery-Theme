@@ -6,7 +6,7 @@
  */
 ?>
 <!-- wp:group {"style":{"color":{"background":"#212529"},"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}},"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2","layout":{"type":"constrained","contentSize":"100%"}} -->
-<div class="wp-block-group has-base-2-color has-text-color has-background has-link-color" style="background-color:#212529;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:columns {"verticalAlignment":null,"style":{"spacing":{"blockGap":{"top":"2rem","left":"2rem"},"padding":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-group has-base-2-color has-text-color has-background has-link-color" style="background-color:#212529;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"2rem","left":"2rem"},"padding":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"top","width":"38%"} -->
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:38%"><!-- wp:site-logo {"width":200,"shouldSyncIcon":false,"align":"center","className":"is-style-rounded"} /-->
 
@@ -26,14 +26,15 @@
 <h3 class="wp-block-heading has-text-align-center has-base-2-color has-text-color has-link-color" style="font-size:1.5rem"><strong>Organic</strong></h3>
 <!-- /wp:heading -->
 
-<!-- wp:navigation {"ref":937,"overlayMenu":"never","style":{"typography":{"fontSize":"1rem"},"spacing":{"blockGap":"0.6rem"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<!-- wp:navigation-link {"label":"Home","url":"/shop"} /-->
+<!-- wp:navigation {"overlayMenu":"never","style":{"typography":{"fontSize":"1rem"},"spacing":{"blockGap":"0.6rem"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:navigation-link {"label":"Home","url":"/"} /-->
 
-<!-- wp:navigation-link {"label":"About Us","url":"/about"} /-->
+<!-- wp:navigation-link {"label":"About Us","url":"/about-us"} /-->
 
-<!-- wp:navigation-link {"label":"Contact Us","url":"/contact"} /-->
+<!-- wp:navigation-link {"label":"Contact Us","url":"/contact-us"} /-->
 
 <!-- wp:navigation-link {"label":"Blogs","url":"/blog"} /-->
+
 <!-- /wp:navigation --></div>
 <!-- /wp:group -->
 
@@ -114,13 +115,13 @@
 <!-- /wp:separator --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
 <div class="wp-block-group alignfull" style="padding-right:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:paragraph {"align":"center","fontSize":"small"} -->
 <p class="has-text-align-center has-small-font-size">©️ 2025 Kaddoar Tech. All rights reserved.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
-<p class="has-text-align-center has-small-font-size">Made by ❤️ with Kaddora Tech</p>
+<p class="has-text-align-center has-small-font-size">Made by ❤️ with <a href="https://kaddora.com/">Kaddora Tech</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
