@@ -1,53 +1,92 @@
-<!-- wp:template-part {"slug":"header","theme":"Online-Grocery-Theme","area":"header"} /-->
+<!-- wp:template-part {"slug":"header"} /-->
 
-<!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}}} -->
-<div class="wp-block-columns" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10)"><!-- wp:column -->
-    <div class="wp-block-column"><!-- wp:image {"id":88,"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
-    <figure class="wp-block-image size-full" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><img src="http://online-grocery-theme.local/wp-content/uploads/2025/09/White-and-Green-Modern-Grocery-Promotion-Instagram-Post.jpg" alt="" class="wp-image-88"/></figure>
-    <!-- /wp:image -->
-    
-    <!-- wp:post-title {"level":3} /-->
-    
-    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-    <div class="wp-block-group"><!-- wp:post-author-name /-->
-    
-    <!-- wp:post-date {"textAlign":"right","style":{"spacing":{"margin":{"right":"77px","left":"77px"}}}} /--></div>
-    <!-- /wp:group -->
-    
-    <!-- wp:post-excerpt /--></div>
-    <!-- /wp:column -->
-    
-    <!-- wp:column {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"22px","right":"22px"}}},"layout":{"type":"constrained"}} -->
-    <div class="wp-block-column" style="padding-top:0;padding-right:22px;padding-bottom:0;padding-left:22px"><!-- wp:image {"id":89,"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"right":"1px","left":"1px"}}}} -->
-    <figure class="wp-block-image size-full" style="margin-right:1px;margin-left:1px"><img src="http://online-grocery-theme.local/wp-content/uploads/2025/09/Green-Modern-Grocery-Store-Instagram-Post.jpg" alt="" class="wp-image-89"/></figure>
-    <!-- /wp:image -->
-    
-    <!-- wp:post-title {"level":3} /-->
-    
-    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group"><!-- wp:post-author-name /-->
-    
-    <!-- wp:post-date {"isLink":true,"style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"margin":{"top":"0","bottom":"0","left":"70px","right":"70px"}}}} /--></div>
-    <!-- /wp:group -->
-    
-    <!-- wp:post-excerpt /--></div>
-    <!-- /wp:column -->
-    
-    <!-- wp:column -->
-    <div class="wp-block-column"><!-- wp:image {"id":90,"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"right":"1px","left":"1px"}}}} -->
-    <figure class="wp-block-image size-full" style="margin-right:1px;margin-left:1px"><img src="http://online-grocery-theme.local/wp-content/uploads/2025/09/Green-and-Yellow-Modern-Grocery-Store-Instagram-Post.jpg" alt="" class="wp-image-90"/></figure>
-    <!-- /wp:image -->
-    
-    <!-- wp:post-title {"level":3} /-->
-    
-    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group"><!-- wp:post-author-name /-->
-    
-    <!-- wp:post-date {"style":{"spacing":{"margin":{"right":"77px","left":"77px"}}}} /--></div>
-    <!-- /wp:group -->
-    
-    <!-- wp:post-excerpt /--></div>
-    <!-- /wp:column --></div>
-    <!-- /wp:columns -->
-    
-    <!-- wp:template-part {"slug":"footer","theme":"Online-Grocery-Theme","area":"footer"} /-->
+<!-- wp:group {"align":"full","layout":{"type":"constrained","contentSize":"%"}} -->
+<div class="wp-block-group alignfull"><!-- wp:cover {"url":"http://organic-food.local/wp-content/uploads/2025/09/flash-sale-1-1024x512.png","id":1000,"dimRatio":60,"customOverlayColor":"#8b9274","isUserOverlayColor":false,"minHeight":300,"isDark":false,"sizeSlug":"large","align":"full","className":"wp-block-cover__inner-container"} -->
+<div class="wp-block-cover alignfull is-light wp-block-cover__inner-container" style="min-height:300px"><img class="wp-block-cover__image-background wp-image-1000 size-large" alt="" src="http://organic-food.local/wp-content/uploads/2025/09/flash-sale-1-1024x512.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim" style="background-color:#8b9274"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"48px"},"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2"} -->
+<h1 class="wp-block-heading has-text-align-center has-base-2-color has-text-color has-link-color" style="font-size:48px"><strong>Welcome to Our Blog</strong></h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2"} -->
+<p class="has-text-align-center has-base-2-color has-text-color has-link-color">Latest articles, tutorials and updates</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search our blog name or title","width":75,"widthUnit":"%","buttonText":"Search","buttonPosition":"button-inside","align":"center","style":{"color":{"background":"#20965f"}}} /--></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}}} -->
+<div class="wp-block-group alignwide" style="padding-top:40px;padding-bottom:40px"><!-- wp:heading -->
+<h2 class="wp-block-heading">Featured Posts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":7,"query":{"perPage":3,"offset":0,"postType":"post","sticky":"only"}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"shadow":"var:preset|shadow|natural","border":{"radius":"25px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="border-radius:25px;padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--20);box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:post-featured-image {"isLink":true,"height":"225px"} /-->
+
+<!-- wp:post-title {"level":3,"isLink":true} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}}} -->
+<div class="wp-block-group alignwide" style="padding-top:40px;padding-bottom:40px"><!-- wp:heading -->
+<h2 class="wp-block-heading">Latest Posts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":8,"query":{"perPage":6,"offset":0,"postType":"post"}} -->
+<div class="wp-block-query"><!-- wp:post-template {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"blockGap":"1rem"}},"layout":{"type":"default"}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|10","left":"0","right":"var:preset|spacing|30"}},"shadow":"var:preset|shadow|natural","border":{"radius":{"topLeft":"25px","bottomRight":"25px"}}},"backgroundColor":"accent-2","layout":{"type":"default"}} -->
+<div class="wp-block-group has-accent-2-background-color has-background" style="border-top-left-radius:25px;border-bottom-right-radius:25px;padding-top:0;padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--10);padding-left:0;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"radius":{"topLeft":"25px","bottomRight":"25px"}}},"backgroundColor":"base","layout":{"type":"default"}} -->
+<div class="wp-block-group has-base-background-color has-background" style="border-top-left-radius:25px;border-bottom-right-radius:25px;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:post-featured-image {"isLink":true,"height":"300px"} /-->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group"><!-- wp:post-title {"isLink":true,"style":{"layout":{"columnSpan":1,"rowSpan":1}}} /-->
+
+<!-- wp:group {"style":{"layout":{"columnSpan":1,"rowSpan":1}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:post-author {"byline":""} /-->
+
+<!-- wp:post-date /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:post-excerpt {"excerptLength":45} /-->
+
+<!-- wp:read-more /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}}} -->
+<div class="wp-block-group alignwide" style="padding-top:40px;padding-bottom:40px"><!-- wp:heading -->
+<h2 class="wp-block-heading">Browse by Category</h2>
+<!-- /wp:heading -->
+
+<!-- wp:categories {"showPostCounts":true} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}},"backgroundColor":"secondary"} -->
+<div class="wp-block-group alignfull has-secondary-background-color has-background" style="padding-top:40px;padding-bottom:40px"><!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Subscribe to Our Newsletter</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Get the latest posts straight to your inbox</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
+
+
+
