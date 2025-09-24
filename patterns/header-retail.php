@@ -5,13 +5,13 @@
  * Categories: Headers
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"},"blockGap":"0px"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30","top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","top":"0px","bottom":"0px"},"blockGap":"0px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:0px;padding-right:0;padding-bottom:0px;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30","top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"width":85} /-->
 
 <!-- wp:heading {"level":3,"style":{"color":{"text":"#198754"},"elements":{"link":{"color":{"text":"#198754"}}}},"fontFamily":"system-sans-serif"} -->
-<h3 class="wp-block-heading has-text-color has-link-color has-system-sans-serif-font-family" style="color:#198754"><strong>Kaddora TecH</strong></h3>
+<h3 class="wp-block-heading has-text-color has-link-color has-system-sans-serif-font-family" style="color:#198754"><strong><a href="<?php echo esc_url( home_url( '/' ) ); ?>" data-type="page" data-id="383">Kaddora TecH</a></strong></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
@@ -63,8 +63,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"0.4rem","top":"0.4rem"},"blockGap":"1rem"},"shadow":"var:preset|shadow|natural","color":{"background":"#bbf8e2"},"typography":{"fontSize":"1.3rem"}},"borderColor":"base","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group has-border-color has-base-border-color has-background" style="background-color:#bbf8e2;padding-top:0.4rem;padding-bottom:0.4rem;font-size:1.3rem;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:navigation {"style":{"spacing":{"blockGap":"2rem"}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"1rem","padding":{"top":"0.4rem","bottom":"0.4rem"},"margin":{"top":"-4px","bottom":"-4px"}},"color":{"background":"#bbf8e2"},"typography":{"fontSize":"1.3rem"}},"borderColor":"base","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group has-border-color has-base-border-color has-background" style="background-color:#bbf8e2;margin-top:-4px;margin-bottom:-4px;padding-top:0.4rem;padding-bottom:0.4rem;font-size:1.3rem"><!-- wp:navigation {"style":{"spacing":{"blockGap":"2rem"}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <!-- wp:navigation-link {"label":"Home","url":"/"} /-->
 
 <!-- wp:navigation-link {"label":"About","url":"/about"} /-->
