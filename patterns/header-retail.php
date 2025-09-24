@@ -25,6 +25,8 @@
 <div class="wp-block-button">
 <a class="wp-block-button__link  has-background wp-element-button" style="background-color:#198754" href="/login">Login</a>
 </div>
+<a href="<?php echo home_url('/login'); ?>" class="auth-link login-link">Login</a>
+
 <div class="wp-block-button">
 <a class="wp-block-button__link  has-background wp-element-button" style="background-color:#198754" href="/register">Register</a>
 </div>
@@ -51,6 +53,8 @@
 <!-- wp:navigation-link {"label":"My Account","url":"/my-account"} /-->
 
 <!-- wp:navigation-link {"label":"Blogs","url":"/blog"} /-->
+
+<!-- wp:navigation-link {"label":"Login","url":"/login"} /-->
  
 <!-- /wp:navigation --></div>
 <!-- /wp:group --></div>
