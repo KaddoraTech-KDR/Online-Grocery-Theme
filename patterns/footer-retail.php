@@ -22,8 +22,8 @@
 <!-- wp:column {"width":"32%","style":{"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}}} -->
 <div class="wp-block-column" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30);flex-basis:32%"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontSize":"1.5rem"},"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2"} -->
-<h3 class="wp-block-heading has-text-align-center has-base-2-color has-text-color has-link-color" style="font-size:1.5rem"><strong>Organic</strong></h3>
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontSize":"1.5rem"},"elements":{"link":{"color":{"text":"#20965f"}}},"color":{"text":"#20965f"}}} -->
+<h3 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#20965f;font-size:1.5rem"><strong>Organic</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:navigation {"overlayMenu":"never","style":{"typography":{"fontSize":"1rem"},"spacing":{"blockGap":"0.6rem"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
@@ -35,12 +35,13 @@
 
 <!-- wp:navigation-link {"label":"Blogs","url":"/blog"} /-->
 
+<!-- wp:navigation-link {"label":"Dasboard","url":"/dashboard"} /-->
 <!-- /wp:navigation --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontSize":"1.5rem"},"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2"} -->
-<h3 class="wp-block-heading has-text-align-center has-base-2-color has-text-color has-link-color" style="font-size:1.5rem"><strong>Quick Link</strong></h3>
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontSize":"1.5rem"},"elements":{"link":{"color":{"text":"#20965f"}}},"color":{"text":"#20965f"}}} -->
+<h3 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#20965f;font-size:1.5rem"><strong>Quick Link</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:navigation {"overlayMenu":"never","style":{"typography":{"fontSize":"1rem"},"spacing":{"blockGap":"0.6rem"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
@@ -59,8 +60,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"top","width":"30%"} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:30%"><!-- wp:heading {"textAlign":"left","level":3,"style":{"typography":{"fontSize":"1.5rem"},"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2"} -->
-<h3 class="wp-block-heading has-text-align-left has-base-2-color has-text-color has-link-color" style="font-size:1.5rem"><strong>Contact US</strong></h3>
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:30%"><!-- wp:heading {"textAlign":"left","level":3,"style":{"typography":{"fontSize":"1.5rem"},"elements":{"link":{"color":{"text":"#20965f"}}},"color":{"text":"#20965f"}}} -->
+<h3 class="wp-block-heading has-text-align-left has-text-color has-link-color" style="color:#20965f;font-size:1.5rem"><strong>Contact US</strong></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base"} -->
@@ -77,32 +78,19 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><strong>KEEP IN TOUCHff</strong></p>
+<p class="has-small-font-size"><strong>KEEP IN TOUCH</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"customIconBackgroundColor":"#6bb252","iconBackgroundColorValue":"#3f8127ff"} -->
+<ul class="wp-block-social-links has-icon-background-color"><!-- wp:social-link {"url":"https://www.instagram.com/kaddoratech/","service":"instagram","label":"Instagram"} /-->
 
-<ul class="wp-block-social-links has-icon-background-color">
-	<li>
-		<a href="<?php echo esc_url('https://www.instagram.com/kaddoratech/'); ?>" class="wp-block-social-link wp-social-link-instagram">
-			<span class="wp-block-social-link-label">Instagram</span>
-		</a>
-	</li>
-	<li>
-		<a href="<?php echo esc_url('https://x.com/KaddoraTech'); ?>" class="wp-block-social-link wp-social-link-x">X</a>
-	</li>
-	<li>
-		<a href="<?php echo esc_url('https://kaddora.com/'); ?>" class="wp-block-social-link wp-social-link-whatsapp">WhatsApp</a>
-	</li>
-	<li>
-		<a href="<?php echo esc_url('https://www.linkedin.com/company/kaddora-tech/posts/'); ?>" class="wp-block-social-link wp-social-link-linkedin">LinkedIn</a>
-	</li>
-	<li>
-		<a href="<?php echo esc_url('https://www.facebook.com/KaddoraTech'); ?>" class="wp-block-social-link wp-social-link-facebook">Facebook</a>
-	</li>
-</ul>
+<!-- wp:social-link {"url":"https://x.com/KaddoraTech","service":"x"} /-->
 
+<!-- wp:social-link {"url":"https://kaddora.com/","service":"whatsapp"} /-->
 
+<!-- wp:social-link {"url":"https://www.linkedin.com/company/kaddora-tech/posts/","service":"linkedin"} /-->
+
+<!-- wp:social-link {"url":"https://www.facebook.com/KaddoraTech","service":"facebook"} /--></ul>
 <!-- /wp:social-links --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
