@@ -77,8 +77,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><strong>KEEP IN TOUCH</strong></p>
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"color":{"text":"#20965f"},"elements":{"link":{"color":{"text":"#20965f"}}}},"fontSize":"small"} -->
+<p class="has-text-color has-link-color has-small-font-size" style="color:#20965f"><strong>KEEP IN TOUCH</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"customIconBackgroundColor":"#6bb252","iconBackgroundColorValue":"#3f8127ff"} -->
