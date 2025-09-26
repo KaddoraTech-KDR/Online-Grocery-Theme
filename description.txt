@@ -1,0 +1,160 @@
+Theme Name: Kaddora – WooCommerce Grocery Store & Supermarket WordPress Theme
+Author: Kaddora Tech
+Author URI: https://kaddora.com
+Description: Kaddora is a clean, modern, and highly flexible WooCommerce WordPress theme designed specifically for grocery stores, supermarkets, organic food shops, hypermarkets, and online retailers selling fresh produce or household goods. Built with the latest WordPress block editor technology, Kaddora delivers fast performance, pixel-perfect layouts, and seamless shopping experiences on any device.
+Packed with pre-built templates and one-click demo import, Kaddora allows you to launch a professional-looking grocery or supermarket website in minutes. Its intuitive drag-and-drop interface and Gutenberg/Block Editor support make it easy for anyone to customize colors, fonts, page layouts, and content without writing code.
+Kaddora integrates deeply with WooCommerce, giving you all the tools you need for a full-featured online store: product catalog, advanced filtering, AJAX cart, wishlists, product quick view, customer accounts, and secure checkout. The theme is fully responsive, SEO-optimized, translation-ready, and built to handle high volumes of products and traffic.
+
+Key Features
+
+WooCommerce Ready: Seamless integration with WooCommerce for managing
+Supermarkets & Hypermarkets
+Organic Food & Farmers Markets
+Online Grocery Delivery Stores
+Specialty Food & Beverage Shops
+Household & Everyday Essentials Retailers
+
+WooCommerce 9.x
+--------------------------------
+9.1.2
+9.1.1
+9.1.0
+9.0.3
+9.0.2
+9.0.1
+9.0.0
+
+WooCommerce 8.x
+--------------------------------
+8.9.3
+8.9.2
+8.9.1
+8.9.0
+8.8.3
+8.8.2
+8.8.1
+8.8.0
+8.7.0
+8.6.1
+8.6.0
+8.5.1
+8.5.0
+8.4.0
+8.3.0
+8.2.1
+8.2.0
+8.1.0
+8.0.3
+8.0.2
+8.0.1
+8.0.0 
+
+WooCommerce 7.x Series
+--------------------------------
+7.9.0
+7.8.0
+7.7.0
+7.6.1
+7.6.0
+7.5.1
+7.5.0
+7.4.1
+7.4.0 
+7.3.0
+7.2.2
+7.2.1
+7.2.0
+7.1.0
+7.0.1
+7.0.0
+
+
+WordPress Builders Supported:
+--------------------------------
+Gutenberg Editor
+Elementor
+WPBakery Page Builder
+
+Booking & Appointment Scheduling
+--------------------------------
+Booked
+WP Simple Booking Calendar
+Amelia
+
+Forms & Lead Generation
+--------------------------------
+Contact Form 7
+WPForms
+Gravity Forms
+Ninja Forms
+
+PHP Version Compatibility:
+--------------------------------
+8.4
+8.3
+8.2
+8.1
+8.0
+7.4
+7.3
+7.2
+7.1
+
+Database Server Compatibility:
+-----------------------------------
+MySQL 9.0
+MySQL 8.0
+MySQL 5.7 
+MySQL 5.6 
+MariaDB 11
+MariaDB 10.9 
+MariaDB 10.8 
+
+Web Server Compatibility
+-----------------------------------
+Apache 2.4
+Nginx
+
+Images And Logo Design
+Canva
+Adobe Photoshop
+Figma
+Adobe Illustrator
+Google Web D  add other page
+
+Website Design Styles & Aesthetics
+-----------------------------------
+3D Effect
+Cartoon
+Comic Book
+Gaming & Esports
+Cyberpunk
+
+Interactive & Dynamic--:
+-----------------------------------
+Interactive
+Scrolling Effects (Parallax)
+Animated
+Video Background
+
+Core Functionality & Framework
+--------------------------------
+Admin Panel (or Dashboard Options)
+Advanced Theme Options (e.g., via WordPress Customizer or a dedicated panel)
+One-Click Demo Import
+Custom Widgets
+Built-in Mega Menus
+Header & Footer Builder
+Layout Builder (Full-site editing)
+White Label Options
+
+
+
+
+Theme version: 1.8.5
+Tags: Grocery, healthcare, mlm, ecommerce, business, responsive, clean
+Text Domain: grocery-kaddora.com
+Plugin Support: Elementor, woocommerce, Word Counter, and Auto Create Page ACF and other
+Image Sources: free site & canva use
+Technology : Html , CSS, PHP , Bootstrap, Jquery, javascript, Mysqli Database,React,Node.js
+

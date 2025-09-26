@@ -77,19 +77,32 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><strong>KEEP IN TOUCH</strong></p>
+<p class="has-small-font-size"><strong>KEEP IN TOUCHff</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"customIconBackgroundColor":"#6bb252","iconBackgroundColorValue":"#3f8127ff"} -->
-<ul class="wp-block-social-links has-icon-background-color"><!-- wp:social-link {"url":"\u003c?php echo esc_url('https://www.instagram.com/kaddoratech/'); ?\u003e","service":"instagram","label":"Instagram"} /-->
 
-<!-- wp:social-link {"url":"\u003c?php echo esc_url('https://x.com/KaddoraTech'); ?\u003e","service":"x"} /-->
+<ul class="wp-block-social-links has-icon-background-color">
+	<li>
+		<a href="<?php echo esc_url('https://www.instagram.com/kaddoratech/'); ?>" class="wp-block-social-link wp-social-link-instagram">
+			<span class="wp-block-social-link-label">Instagram</span>
+		</a>
+	</li>
+	<li>
+		<a href="<?php echo esc_url('https://x.com/KaddoraTech'); ?>" class="wp-block-social-link wp-social-link-x">X</a>
+	</li>
+	<li>
+		<a href="<?php echo esc_url('https://kaddora.com/'); ?>" class="wp-block-social-link wp-social-link-whatsapp">WhatsApp</a>
+	</li>
+	<li>
+		<a href="<?php echo esc_url('https://www.linkedin.com/company/kaddora-tech/posts/'); ?>" class="wp-block-social-link wp-social-link-linkedin">LinkedIn</a>
+	</li>
+	<li>
+		<a href="<?php echo esc_url('https://www.facebook.com/KaddoraTech'); ?>" class="wp-block-social-link wp-social-link-facebook">Facebook</a>
+	</li>
+</ul>
 
-<!-- wp:social-link {"url":"\u003c?php echo esc_url('https://kaddora.com/'); ?\u003e","service":"whatsapp"} /-->
 
-<!-- wp:social-link {"url":"\u003c?php echo esc_url('https://www.linkedin.com/company/kaddora-tech/posts/') ?\u003e","service":"linkedin"} /-->
-
-<!-- wp:social-link {"url":"\u003c?php echo esc_url('https://www.facebook.com/KaddoraTech'); ?\u003e","service":"facebook"} /--></ul>
 <!-- /wp:social-links --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
